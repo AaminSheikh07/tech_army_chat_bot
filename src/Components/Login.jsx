@@ -1,20 +1,19 @@
 import "../CSS/Login.css";
 import "../../src/assets/tech-army-high-resolution-logo-black.png";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Login() {
-
-    var navigate= useNavigate()
-    var nav=()=>{
-        navigate("/userregister")
-
-
-    }
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleLogin = () => {};
+  var navigate = useNavigate();
+  var nav = () => {
+    navigate("/userregister");
+  };
   return (
     <>
-      
       <body>
-        
         <section>
           {" "}
           <span></span> <span></span> <span></span> <span></span> <span></span>{" "}
@@ -71,7 +70,7 @@ export default function Login() {
           <span></span> <span></span> <span></span> <span></span> <span></span>
           <div className="signin">
             <div className="content">
-              <h2>Sign In</h2>
+              <h2>Log In</h2>
 
               <div className="form">
                 <div className="inputBox">
@@ -84,7 +83,10 @@ export default function Login() {
 
                 <div className="links">
                   {" "}
-                  <Link href="#"></Link> <Link to="/signup" onClick={nav} href="#">Sign Up</Link>
+                  <Link href="#"></Link>{" "}
+                  <Link to="/signup" onClick={nav} href="#">
+                    Sign Up
+                  </Link>
                 </div>
 
                 <div className="inputBox">
