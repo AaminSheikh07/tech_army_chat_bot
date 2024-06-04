@@ -8,7 +8,8 @@ import Bot from "./Components/bot";
 const App = () => {
   return (
     <div>
-      <nav className="navbar bg-dark m-0 nav-mar">
+
+      <nav className="navbar bg-dark navwid">
         <div className="container-fluid nav-back">
           <a className="navbar-brand" href="#">
             <img
@@ -26,11 +27,11 @@ const App = () => {
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
           <Route path="/" element={<Login></Login>}></Route>
           <Route path="/bot" element={<Bot></Bot>}></Route>
+
         </Routes>
       </div>
     </div>
 
-    // _____
   );
 };
 

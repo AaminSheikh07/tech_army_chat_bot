@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import "../CSS/bot.css"
 
 export default function Bot() {
   const [question, setquestion] = useState("");
@@ -23,6 +24,36 @@ export default function Bot() {
       <button onClick={api} className="btn btn-primary">
         call
       </button>
+
+
+<body>
+      <div class="wrapper">
+        <div class="title">Chatbot</div>
+        <div class="box">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="msg">
+                    <p>Hello everyone, How are you?</p>
+                </div>
+            </div>
+            <br clear="both"/>
+            <div class="item right">
+                <div class="msg">
+                    <p>Nice</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="typing-area">
+            <div class="input-field">
+                <input type="text" placeholder="Type your message" required/>
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+    </body>
     </div>
   );
 }
