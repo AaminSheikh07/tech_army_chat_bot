@@ -18,13 +18,14 @@
 .nav-back{
   /* background: linear-gradient(#000,#0f0,#000); */
   background: #181818;
+  /* width: 100%; */
   /* margin-bottom: 0; */
 
 
 }
-/* .nav-mar{
-  margin-bottom: 0;
-} */
+.navwid{
+  width: 100vw;
+}
 section 
 {
   position: absolute;
