@@ -34,7 +34,7 @@ export default function SignUp() {
       });
     } catch (error) {
       console.log(error.message);
-      Toast.success(error.message, {
+      toast.success(error.message, {
         position: "bottom-center",
       });
     }

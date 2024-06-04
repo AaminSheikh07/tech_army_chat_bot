@@ -4,7 +4,6 @@ import "..\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./Components/SignUp";
 import Bot from "./Components/bot";
-import Home from "./Components/home";
 
 const App = () => {
   return (
@@ -21,15 +20,12 @@ const App = () => {
           </a>
         </div>
       </nav>
-      <div className="">{/* <Login></Login> */}</div>
-
-      {/* __________ */}
 
       <div>
         <Routes>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
           <Route path="/" element={<Login></Login>}></Route>
-          <Route path="/home" element={<Home></Home>}></Route>
+          <Route path="/bot" element={<Bot></Bot>}></Route>
         </Routes>
       </div>
     </div>
