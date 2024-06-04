@@ -8,6 +8,7 @@ import Bot from "./Components/bot";
 const App = () => {
   return (
     <div>
+
       <nav className="navbar bg-dark navwid">
         <div className="container-fluid nav-back">
           <a className="navbar-brand" href="#">
@@ -20,25 +21,17 @@ const App = () => {
           </a>
         </div>
       </nav>
-      <div className="">
-        <Login></Login>
-      </div>
-
-      {/* <div className='botdiv'>
-          <Bot></Bot>
-        </div> */}
-
-      {/* __________ */}
 
       <div>
         <Routes>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
           <Route path="/" element={<Login></Login>}></Route>
+          <Route path="/bot" element={<Bot></Bot>}></Route>
+
         </Routes>
       </div>
     </div>
 
-    // _____
   );
 };
 
